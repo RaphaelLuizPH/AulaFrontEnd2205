@@ -10,7 +10,13 @@ html {
   background-position: center;
   background-size: cover;
   height: 100vh;
+
 }
+
+* {
+  border: solid;
+}
+
 
 #logo {
   position: relative;
@@ -51,13 +57,6 @@ button {
   border: none;
 }
 
-.dropdown {
-  display: none;
-}
-
-.dropdown li {
-  display: none;
-}
 
 li {
   display: flex;
@@ -148,15 +147,17 @@ section {
 
 .content {
   display: flex;
-  width: 50%;
+  justify-content: space-between;
   color: white;
-  
+  justify-content: left;
   
 }
 
 .content p {
+  height: 10px;
   display: flex;
-  width: 50%;
+  align-items: center;
+  text-align: left;
   color: white;
   
   
@@ -179,10 +180,6 @@ section {
   color: white;
 }
 
-.content p {
-  color: white;
-  display: flex;
-}
 
 
 
