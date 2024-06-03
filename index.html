@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cybersegurança</title>
   </head>
   <body>
-    <div id="nav">
-      <img id="logo" src="/Logo-removebg-preview.png" alt="" />
-      <ul id="caixabotoes">
-        <button class="button">O que é cibersegurança?</button>
-        <button class="button">Entre em contato</button>
-        <button class="button">Nossos Serviços</button>
-        <button class="button">Nossa história</button>
-      </ul>
-    </div>
+    <header>
+      <div id="nav">
+        <img id="logo" src="Logo-removebg-preview.png" alt="" />
+        <ul id="caixabotoes">
+          <button class="button">O que é cibersegurança?</button>
+          <button class="button">Entre em contato</button>
+          <button class="button">Nossos Serviços</button>
+          <button class="button">Nossa história</button>
+        </ul>
+      </div>
+    </header>
     <section>
       <div>
         <button class="buttoncenter">Vamos começar?</button>
       </div>
     </section>
     <section>
-      <div class="content">
+      <div class="content" data-aos="fade-left">
         <div class="text">
           <h1 class="lato-bold">O que é <span>cibersegurança?</span></h1>
           <p class="lato-regular">
@@ -39,11 +42,55 @@
           </p>
         </div>
         <div class="img">
-          <img src="/what-is-cybersecurity.jpg" alt="" />
+          <img src="what-is-cybersecurity.jpg" alt="" />
         </div>
       </div>
     </section>
 
-    <footer></footer>
+    <section>
+      <div class="content" data-aos="fade-right">
+        <div class="img">
+          <img src="download.jpg" alt="" />
+        </div>
+        <div class="text">
+          <h1 class="lato-bold">
+            Por que eu preciso de uma <span>empresa de cybersegurança?</span>
+          </h1>
+          <p class="lato-regular">
+            Contratar uma empresa de cibersegurança é essencial nos dias de hoje
+            por várias razões. Primeiro, proteger seus dados e sistemas contra
+            ataques cibernéticos é crucial para garantir a continuidade dos
+            negócios. Com o aumento das ameaças cibernéticas, desde malware até
+            ataques de phishing e ransomware, uma empresa especializada pode
+            implementar medidas proativas para evitar esses incidentes.
+            <br /><br />
+            <br /><br />Isso é especialmente importante porque os ataques
+            cibernéticos estão se tornando mais sofisticados e podem passar
+            despercebidos por longos períodos de tempo sem a detecção adequada.
+            Em resumo, investir em uma empresa de cibersegurança é uma medida
+            proativa para proteger sua empresa contra as crescentes ameaças
+            cibernéticas, garantir conformidade regulatória e manter a confiança
+            dos clientes.<br /><br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="footerlinks">
+        <li>Saiba mais</li>
+        <li>Linkedin</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
+      <ul class="footerlinks">
+        <li>Saiba mais</li>
+        <li>Linkedin</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
