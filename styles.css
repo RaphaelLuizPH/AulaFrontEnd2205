@@ -9,10 +9,10 @@
 body,
 html {
   background-color: rgba(0, 0, 0, 0.473);
-  background-blend-mode: darken;
   background-image: url(../background.png);
   background-position: center;
-  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Lato", sans-serif;
   font-style: normal;
 }
@@ -40,12 +40,14 @@ html {
   font-weight: 900;
   font-style: normal;
 }
-
 /*
 * {
   outline: solid;
 }*/
 
+#start {
+  display: none;
+}
 
 #logo {
   margin-left: 5%;
@@ -56,7 +58,7 @@ html {
 
 #nav {
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-color: rgb(255, 255, 255);
   display: flex;
   position: static;
@@ -65,18 +67,20 @@ html {
 }
 
 #caixabotoes {
-  margin: 20px;
-  padding: 18px;
-  gap: 20px;
+  padding: 50px;
+  gap: 10px;
   display: flex;
-  width: 50%;
-  max-height: 100%;
+  width: 60vw;
+  text-align: center;
+  align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
   margin: auto;
+  flex: 1;
 }
 
 .button {
+  margin: auto 5%;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -86,13 +90,12 @@ html {
   font-size: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: fit-content;
+  justify-content: left;
   transition: all 0.1s;
-  border-radius: 9px;
   border: 0;
   position: relative;
-  padding: 1%;
+  padding-bottom: 1%;
+  text-align: left;
 }
 
 .button:active {
@@ -108,19 +111,25 @@ html {
 .underline {
   width: 0;
   height: 5px;
-  bottom: 0;
-  background-color: black;
+  top: 99%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
   position: absolute;
-  transition: all 1s ease-in;
+  transition: all 0.8s ease-in;
 }
-
 
 .button:hover .underline {
   width: 100%;
-  left: 1%;
+  top: 99%;
+  left: 0;
+  background-color: blueviolet;
 }
 
-
+.buttoncenter:hover .underline {
+  background-color: blueviolet;
+  width: 100%;
+  left: 0;
+}
 
 section {
   overflow: hidden;
@@ -140,14 +149,14 @@ section {
   max-width: 500px;
   max-height: 100px;
   margin-bottom: 100%;
-  border-radius: 9pc;
   background: white;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2em;
   transition: all 0.1s;
-  animation: pulse 2s ease-in-out infinite;
+  animation: pulse 10s ease-in-out infinite;
+  position: relative;
 }
 
 .buttoncenter:active {
@@ -170,6 +179,10 @@ section {
   }
 }
 
+.close {
+  animation: close 2s ease-in-out forwards;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -181,16 +194,17 @@ section {
 }
 
 span {
-  transition: background 1s;
+  transition: background 0.1s;
+  padding: 5px;
+  text-decoration: underline;
+  text-underline-position: below;
 }
 
 span:hover {
-  line-height: 1.1;
-  white-space: wrap;
   color: #ffffff;
-  padding: 5px;
+  text-align: left;
   background: rgb(0, 0, 0);
-  border-radius: 9px;
+  border-radius: 4px;
 }
 
 .text {
@@ -203,6 +217,7 @@ span:hover {
 }
 
 .text h1 {
+  line-height: 1.5;
   margin-bottom: 15px;
   text-align: left;
   font-size: var(--font-size3);
@@ -246,8 +261,7 @@ footer {
 
 @media (max-width: 900px) {
   #caixabotoes {
-    flex-flow: row wrap;
-    gap: 10px;
+    flex-flow: row nowrap;
   }
 
   .button {
@@ -275,12 +289,10 @@ footer {
   }
 
   #caixabotoes {
-    margin: auto;
-    gap: 10px;
     display: flex;
     min-width: 80px;
     max-height: 100%;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
   }
 
   #logo {

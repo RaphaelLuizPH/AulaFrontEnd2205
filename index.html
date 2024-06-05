@@ -8,7 +8,7 @@
     <title>Cybersegurança</title>
   </head>
   <body>
-    <header>
+    <nav>
       <div id="nav">
         <img id="logo" src="Logo-removebg-preview.png" alt="" />
         <ul id="caixabotoes">
@@ -30,16 +30,24 @@
           </button>
         </ul>
       </div>
-    </header>
+    </nav>
     <section>
       <div>
-        <button class="buttoncenter">Vamos começar?</button>
+        <button
+          class="buttoncenter"
+          id="buttoncenter"
+          onclick="start(), buttonanimate()"
+        >
+          Vamos começar?
+          <div class="underline"></div>
+        </button>
       </div>
     </section>
+
     <section>
-      <div class="content" data-aos="fade-left">
+      <div id="section1" class="content" data-aos="fade-left">
         <div class="text">
-          <h1 class="lato-bold">O que é <span>cibersegurança?</span></h1>
+          <h1 class="lato-bold">O que é<span>cibersegurança?</span></h1>
           <p class="lato-regular">
             Cibersegurança é o conjunto de práticas, tecnologias e processos
             projetados para proteger sistemas, redes, programas e dados contra
@@ -66,7 +74,7 @@
         </div>
         <div class="text">
           <h1 class="lato-bold">
-            Por que eu preciso de uma <span>empresa de cybersegurança?</span>
+            Por que eu preciso de uma<span>empresa de cybersegurança?</span>
           </h1>
           <p class="lato-regular">
             Contratar uma empresa de cibersegurança é essencial nos dias de hoje
