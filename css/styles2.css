@@ -1,0 +1,59 @@
+.text2 {
+  background-color: rgba(0, 0, 0, 0.37);
+  width: 80vw;
+  height: fit-content;
+}
+
+.sectionoquee {
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 6%;
+  align-items: center;
+  justify-content: center;
+}
+
+.p1 p {
+  color: white;
+  max-width: 80%;
+}
+
+.p1 {
+  padding: 10%;
+}
+
+.h1 {
+  color: white;
+  font-size: 35px;
+  padding-bottom: 1%;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: left;
+  color: white;
+  gap: 40px;
+  
+}
+
+
+.lista {
+    background-color: rgba(137, 43, 226, 0.274);
+    padding: 20px;
+    border-radius: 9px;
+    max-width: 80%;
+    
+}
+
+
+.lista p {
+    transition: all 0.1s;
+}
+
+
+
+

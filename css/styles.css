@@ -9,7 +9,7 @@
 body,
 html {
   background-color: rgba(0, 0, 0, 0.473);
-  background-image: url(../background.png);
+  background-image: url(../images/background.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,6 +29,9 @@ html {
   font-style: normal;
 }
 
+
+
+
 .lato-regular {
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -40,21 +43,30 @@ html {
   font-weight: 900;
   font-style: normal;
 }
+
 /*
 * {
   outline: solid;
-}*/
+}
+*/
 
 #start {
   display: none;
 }
 
 #logo {
+  width: 20vw;
   margin-left: 5%;
-  width: 20%;
-  height: 500px;
   object-fit: contain;
 }
+
+a {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  height: min-content;
+}
+
 
 #nav {
   width: 100%;
@@ -96,6 +108,27 @@ html {
   position: relative;
   padding-bottom: 1%;
   text-align: left;
+  text-decoration: none;
+}
+
+
+.buttonactive {
+  margin: auto 5%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: blueviolet;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  transition: all 0.1s;
+  border: 0;
+  position: relative;
+  padding-bottom: 1%;
+  text-align: left;
+  text-decoration: none;
 }
 
 .button:active {
@@ -131,16 +164,19 @@ html {
   left: 0;
 }
 
+/* Daqui pra cima - Manter */ 
+
 section {
   overflow: hidden;
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 800px;
-  margin-top: 20%;
+  margin-top: 6%;
   align-items: center;
   justify-content: center;
 }
+
 
 .buttoncenter {
   cursor: pointer;
@@ -148,7 +184,7 @@ section {
   height: 20vh;
   max-width: 500px;
   max-height: 100px;
-  margin-bottom: 100%;
+  margin: auto;
   background: white;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -163,6 +199,11 @@ section {
   background-color: rgba(22, 22, 22, 0.048);
   color: rgb(255, 255, 255);
 }
+
+.roundedborder {
+  border-radius: 99px;
+}
+
 
 @keyframes pulse {
   0% {
@@ -237,6 +278,10 @@ span:hover {
   height: 100%;
   object-fit: cover;
 }
+
+
+/* Footer - Manter */ 
+
 
 footer {
   display: flex;
