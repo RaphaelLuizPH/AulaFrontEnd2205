@@ -53,7 +53,7 @@ ul {
     padding: 20px;
     border-radius: 9px;
     max-width: 80%;
-    
+    min-width: 20%;
 }
 
 
