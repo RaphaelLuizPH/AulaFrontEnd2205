@@ -26,6 +26,10 @@
   
 }
 
+
+
+
+
 .p1 p {
   color: white;
   max-width: 50%;
@@ -62,5 +66,15 @@ ul {
 }
 
 
+@media (max-width: 700px) {
+
+  .p1 h1{
+    margin: 5% auto;
+    font-size: 24px;
+    
+  }
+  
+  
+}
 
 
