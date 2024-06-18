@@ -184,6 +184,7 @@ section {
 
 
 .buttoncenter {
+  color: white;
   cursor: pointer;
   width: 60vw;
   height: 20vh;
@@ -200,6 +201,7 @@ section {
 }
 
 .buttoncenter:hover  {
+  color: black;
   background-color: rgb(255, 255, 255);
   background-size: 10px;
 }
